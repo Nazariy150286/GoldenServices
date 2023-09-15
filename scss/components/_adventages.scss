@@ -1,0 +1,58 @@
+.adventages {
+  min-height: 550px;
+  padding-top: 109px;
+  padding-bottom: 119px;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+    padding-top: 87px;
+  }
+  &__item {
+    width: 274px;
+    height: 185px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__subtitle {
+    @include title($black, 18px, -0.45px, none);
+  }
+  &__title {
+    @include title($black, 40px, -1px, uppercase);
+  }
+
+  &__block-img {
+    border: 3px solid #fed136;
+    border-radius: 100%;
+    width: 62px;
+    height: 69px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      position: absolute;
+
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__subtitle {
+    margin: 0;
+  }
+  &__desc {
+    margin: 0;
+
+    color: $gray;
+    text-align: center;
+    font-family: RobotoSlab;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.35px;
+  }
+}

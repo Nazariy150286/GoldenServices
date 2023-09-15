@@ -1,0 +1,40 @@
+.header {
+  position: fixed;
+  z-index: 500;
+  background: $white;
+  width: 100%;
+  top: 0;
+  &__logo {
+    color: $first-color;
+    text-align: center;
+    font-family: Bilbo Swash Caps;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 41px; /* 113.889% */
+    letter-spacing: 1.3px;
+
+    padding-top: 40px;
+  }
+  &__link {
+    color: $first-color;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 41px;
+    text-transform: uppercase;
+  }
+  &__menu {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__item {
+    padding-top: 50px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
