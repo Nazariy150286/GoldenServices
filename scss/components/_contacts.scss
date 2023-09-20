@@ -1,0 +1,61 @@
+.contacts {
+  background-color: $black;
+  padding-top: 92px;
+  padding-bottom: 115px;
+  &__title {
+    @include title($white, 40px, -1px, uppercase);
+  }
+  &__form-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 128px;
+    gap: 27px;
+    padding-bottom: 47px;
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    align-items: center;
+  }
+  &__input {
+    width: 455px;
+    height: 50px;
+    border: 1px solid $ccc;
+    padding: 12px 0 21px 20px;
+    outline: none;
+
+    @include title($bbb, 14px, -0.35px, uppercase);
+    text-align: left;
+  }
+  &__form-text {
+    width: 458px;
+    height: 206px;
+    border: 1px solid $ccc;
+    padding: 14px 0 0 22px;
+
+    resize: none;
+    outline: none;
+
+    @include title($bbb, 14px, -0.35px, uppercase);
+    text-align: left;
+  }
+  &__form-btn {
+    width: 242px;
+    height: 68px;
+    background-color: $first-color;
+
+    color: $white;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    border: none;
+
+    margin: 0 auto;
+    display: block;
+  }
+}
